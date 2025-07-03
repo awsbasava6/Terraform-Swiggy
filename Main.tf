@@ -31,7 +31,7 @@ resource "aws_security_group" "Project-SWIGGY" {
 
 
 resource "aws_instance" "web" {
-  ami                    = "ami-020cba7c55df1f615:"
+  ami                    = "ami-020cba7c55df1f615"
   instance_type          = "t2.large"
   key_name               = "pr-swiggy"
   vpc_security_group_ids = [aws_security_group.Project-SWIGGY.id]
